@@ -8,7 +8,7 @@ const Page = () => {
 	return (
 		<section className="w-full h-auto">
 			<div className="px-40 py-16">
-				<h1 className="text-[38px] font-[600] mt-4 text-[#6126DD]">
+				<h1 className="text-[38px] font-semibold mt-4 text-[#6126DD]">
 					Enhance the visibility and aesthetic appeal of textual content through
 					the utilization of premier online text editing tools.
 				</h1>
@@ -19,7 +19,7 @@ const Page = () => {
 					lasting impression.
 				</p>
 				<div className="my-20 mx-10">
-					<h1 className="text-center text-[26px] font-[600]">Text Tools</h1>
+					<h1 className="text-center text-[26px] font-semibold">Text Tools</h1>
 					<p className="text-center text-[14px] font-[500] mb-5">
 						Find your specific text tool, like text to speech, image to text etc
 					</p>
@@ -36,7 +36,7 @@ const Page = () => {
 											height={40}
 											className="w-full h-full max-w-[40px] max-h-[40px]"
 										/>
-										<h1 className="text-[26px] font-[600]">{title}</h1>
+										<h1 className="text-[26px] font-semibold">{title}</h1>
 										<Link
 											href={link}
 											className="p-[10px]  rounded-full bg-[#6126DD] w-max"
@@ -64,7 +64,7 @@ const Page = () => {
 							/>
 						</div>
 						<div>
-							<h1 className="font-[600] text-[26px]  mb-3 text-[#6126DD]">
+							<h1 className="font-semibold text-[26px]  mb-3 text-[#6126DD]">
 								Make your text stand out with our free text tools!
 							</h1>
 							<p className="text-[14px] font-[500] text-justify mt-2">
@@ -92,7 +92,7 @@ const Page = () => {
 							</p>
 						</div>
 						<div className="text-justify">
-							<h1 className="font-[600] text-[26px]  mb-3 text-[#6126DD]">
+							<h1 className="font-semibold text-[26px]  mb-3 text-[#6126DD]">
 								AI-powered text tools that are growing rapidly{" "}
 							</h1>
 							<p className="text-[14px] font-[500] text-justify mt-2">

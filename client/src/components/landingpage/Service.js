@@ -24,7 +24,7 @@ const Service = () => {
 											height={40}
 											className="w-full h-full max-w-[40px] max-h-[40px]"
 										/>
-										<h1 className="text-[26px] font-[600]">{title}</h1>
+										<h1 className="text-[26px] font-semibold">{title}</h1>
 									</div>
 									<p className="text-[14px] font-[500] text-justify mt-2">
 										{description}

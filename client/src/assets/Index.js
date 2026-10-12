@@ -1,3 +1,18 @@
+import ArticleTool from "@/components/ai-writerTools/ArticleTool";
+import CaptionTool from "@/components/ai-writerTools/CaptionTool";
+import EmailTool from "@/components/ai-writerTools/EmailTool";
+import EssayTool from "@/components/ai-writerTools/EssayTool";
+import ExpandTool from "@/components/ai-writerTools/ExpandTool";
+import GrammarCheckerTool from "@/components/ai-writerTools/GrammarCheckerTool";
+import KeywordsTool from "@/components/ai-writerTools/KeywordsTool";
+import OutlineTool from "@/components/ai-writerTools/OutlineTool";
+import ParagraphTool from "@/components/ai-writerTools/ParagraphTool";
+import ParaphraserTool from "@/components/ai-writerTools/ParaphraserTool";
+import ScriptTool from "@/components/ai-writerTools/ScriptTool";
+import ShortenTool from "@/components/ai-writerTools/ShortenTool";
+import StoryTool from "@/components/ai-writerTools/StoryTool";
+import SummarizerTool from "@/components/ai-writerTools/SummarizerTool";
+import TranslationsTool from "@/components/ai-writerTools/TranslationsTool";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export const NavItems = [
@@ -129,28 +144,24 @@ export const AIwriterTools = [
     id: 1,
     title: "Generate Text",
     description: "Create unique and engaging content for various purposes.",
-    link: "/ai-writer/generate-text",
   },
   {
     id: 2,
     title: "Edit Text",
     description:
       "Automatically generate and edit text based on provided input or prompts.",
-    link: "/ai-writer/edit-text",
   },
   {
     id: 3,
     title: "Content",
     description:
       "Produce high-quality articles, blog posts, and web content efficiently.",
-    link: "/ai-writer/content",
   },
   {
     id: 4,
     title: "Business & Marketing",
     description:
       "Craft compelling copy and promotional materials to enhance marketing efforts.",
-    link: "/ai-writer/bsm-text",
   },
 ];
 
@@ -160,70 +171,70 @@ export const ImageTools = [
     title: "Compress Image",
     description:
       "The easiest and fastest way to compress your JPEGs, PNGs, and any other images.",
-    link: "/image-editor/compress-image",
+    link: "/image-editor/tools",
   },
   {
     id: 2,
     title: "Rotate Image",
     description:
       "Easily rotate any image for social media, messages, document, or share it with your friends.",
-    link: "/image-editor/rotate-image",
+    link: "/image-editor/tools",
   },
   {
     id: 3,
     title: "Resize Image",
     description:
       "Resize images without cropping or losing the quality of the original image.",
-    link: "/image-editor/resize-image",
+    link: "/image-editor/tools",
   },
   {
     id: 4,
     title: "Crop Image",
     description:
       "Is your image too big? Use our social media presets or crop it yourself with our Crop Image tool.",
-    link: "/image-editor/crop-image",
+    link: "/image-editor/tools",
   },
   {
     id: 5,
     title: "PNG to SVG",
     description:
       "Convert your PNG images into SVG format in a snap. Use our easy-to-use PNG to SVG converter for free.",
-    link: "/image-editor/png-to-svg",
+    link: "/image-editor/tools",
   },
   {
     id: 6,
     title: "HEIC to JPG",
     description:
       "Convert HEIC photos to JPG in no time with our file converter.",
-    link: "/image-editor/heic-to-jpg",
+    link: "/image-editor/tools",
   },
   {
     id: 7,
     title: "JPG to PNG",
     description:
       "This online JPG to PNG Converter is the easiest and fastest way to convert your JPGs into PNGs.",
-    link: "/image-editor/jpg-to-png",
+    link: "/image-editor/tools",
   },
   {
     id: 8,
     title: "PNG to JPG",
     description:
       "Convert your PNG images into JPG format in a snap. Use our easy-to-use PNG to JPG converter for free & without signing up.",
-    link: "/image-editor/png-to-jpg",
+    link: "/image-editor/tools",
   },
   {
     id: 9,
     title: "Color Palette from Image",
     description:
       "Upload an image and generate a color palette with a single click.",
-    link: "/image-editor/color-palette-from-image",
+    link: "/image-editor/tools",
   },
   {
     id: 10,
     title: "SVG to PNG",
     description:
       "Convert your SVGs into PNG images in a snap. Use our easy-to-use SVG to PNG converter for free.",
-    link: "/image-editor/svg-to-png",
+    link: "/image-editor/tools",
   },
 ];
 
@@ -352,94 +363,93 @@ export const toneOptions = [
   { value: "empathetic", label: "Empathetic" },
 ];
 
-export const AiWriterGeentredText = [
+export const toolsList = [
   {
-    name: "Article",
+    sectionName: "Content Writer",
+    sectionItems: [
+      {
+        name: "Email writer",
+        component: <EmailTool />
+      },
+      {
+        name: "Article",
+        component: <ArticleTool />
+      },
+      {
+        name: "Paragraph",
+        component: <ParagraphTool />
+      },
+      {
+        name: "Outline",
+        component: <OutlineTool />
+      },
+      {
+        name: "Keywords",
+        component: <KeywordsTool />
+      },
+      {
+        name: "Script",
+        component: <ScriptTool />
+      },
+      {
+        name: "Caption",
+        component: <CaptionTool />
+      },
+      {
+        name: "Essay",
+        component: <EssayTool />
+      },
+      {
+        name: "Story",
+        component: <StoryTool />
+      },
+      {
+        name: "Translations",
+        component: <TranslationsTool />
+      },
+    ]
   },
   {
-    name: "Email",
+    sectionName: "Edit text",
+    sectionItems: [{
+      name: "Expand",
+      component: <ExpandTool />
+    },
+    {
+      name: "Grammar checker",
+      component: <GrammarCheckerTool />
+    },
+    {
+      name: "Paraphraser",
+      component: <ParaphraserTool />
+    },
+    {
+      name: "Shorten",
+      component: <ShortenTool />
+    },
+    {
+      name: "Summarizer",
+      component: <SummarizerTool />
+    },]
   },
   {
-    name: "Essay",
-  },
-  {
-    name: "Keywords",
-  },
-  {
-    name: "Outline",
-  },
-  {
-    name: "Paragraph",
-  },
-  {
-    name: "Story",
-  },
-  {
-    name: "Translations",
-  },
-];
-export const AiWriterEditText = [
-  {
-    name: "Expand",
-  },
-  {
-    name: "Grammar checker",
-  },
-  {
-    name: "Paraphraser",
-  },
-  {
-    name: "Shorten",
-  },
-  {
-    name: "Summarizer",
-  },
-];
-
-export const AiWriterContent = [
-  {
-    name: "Article",
-  },
-  {
-    name: "Paragraph",
-  },
-  {
-    name: "Outline",
-  },
-  {
-    name: "Keywords",
-  },
-  {
-    name: "Script",
-  },
-  {
-    name: "Title Generator",
-  },
-  {
-    name: "Caption",
-  },
-];
-
-export const AiWriterBM = [
-  {
-    name: "Bussiness Name",
-  },
-  {
-    name: "Email writer",
-  },
-  {
-    name: "Slogan",
-  },
-  {
-    name: "Startup Idea",
-  },
-  {
-    name: "Bussiness Name",
-  },
-  {
-    name: "Ad Copy",
-  },
-  {
-    name: "Product description",
-  },
-];
+    sectionName: "Business & Marketing",
+    sectionItems: [
+      {
+        name: "Business Name",
+      },
+      {
+        name: "Slogan",
+      },
+      {
+        name: "Startup Idea",
+      },
+      {
+        name: "Ad Copy",
+      },
+      {
+        name: "Product description",
+      },
+    ]
+  }
+]

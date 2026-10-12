@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
 import HeroBannner from "@/components/landingpage/HeroBannner";
 import Service from "@/components/landingpage/Service";
 import Whychoose from "@/components/landingpage/Whychoose";

@@ -26,10 +26,10 @@ const Page = () => {
 		<section className="w-full h-auto">
 			<div className="px-40 py-16 flex justify-between gap-10">
 				<div className="w-[60%]">
-					<h1 className=" text-[20px] font-[600] text-[#6126DD]">
+					<h1 className=" text-[20px] font-semibold text-[#6126DD]">
 						Super Simple Word & Character Counter
 					</h1>
-					<p className=" text-[14px] font-[600]">
+					<p className=" text-[14px] font-semibold">
 						A word counter and character counter all in one spot, perfect for
 						measuring your text length for any purpose.
 					</p>
@@ -42,14 +42,14 @@ const Page = () => {
 					</form>
 				</div>
 				<div className="w-[40%]">
-					<h1 className="text-[#6126DD] text-[20px] font-[600]">
+					<h1 className="text-[#6126DD] text-[20px] font-semibold">
 						Counter Results
 					</h1>
-					<p className=" text-[14px] font-[600] my-2">Words: {words}</p>
-					<p className=" text-[14px] font-[600] my-2">
+					<p className=" text-[14px] font-semibold my-2">Words: {words}</p>
+					<p className=" text-[14px] font-semibold my-2">
 						Characters: {characters}
 					</p>
-					<p className=" text-[14px] font-[600] my-2">
+					<p className=" text-[14px] font-semibold my-2">
 						Characters (without spaces): {charactersWithoutWords}
 					</p>
 				</div>

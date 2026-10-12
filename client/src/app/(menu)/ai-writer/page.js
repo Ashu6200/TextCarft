@@ -1,10 +1,10 @@
-import { AIwriterTools } from "@/assets/Index";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { AIwriterTools } from '@/assets/Index';
+import Footer from '@/components/layout/Footer';
+import Navbar from '@/components/layout/Navbar';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const Page = () => {
   return (
@@ -13,7 +13,7 @@ const Page = () => {
         <Navbar />
         <section className='w-full h-auto'>
           <div className='px-40 py-16'>
-            <h1 className='text-[38px] font-[600] mt-4 text-[#6126DD]'>
+            <h1 className='text-[38px] font-semibold mt-4 text-[#6126DD]'>
               AI Writer streamlines the process of generating textual content,
               allowing for swift creation without sacrificing quality or
               efficacy.
@@ -27,7 +27,7 @@ const Page = () => {
               the power of AI for their textual needs effortlessly.
             </p>
             <div className='my-20 mx-10'>
-              <h1 className='text-center text-[26px] font-[600]'>
+              <h1 className='text-center text-[26px] font-semibold'>
                 AI-Writer Tools
               </h1>
               <p className='text-center text-[14px] font-[500] mb-5'>
@@ -36,20 +36,20 @@ const Page = () => {
               </p>
               <div className='grid grid-cols-2 gap-8'>
                 {AIwriterTools.map((item, key) => {
-                  const { title, description, link } = item;
+                  const { title, description } = item;
                   return (
                     <div key={key} className='glass p-6  h-full w-full'>
                       <div className='flex items-center gap-5'>
                         <Image
-                          src={"/images/icon1.png"}
-                          alt={"icon1"}
+                          src={'/images/icon1.png'}
+                          alt={'icon1'}
                           width={40}
                           height={40}
                           className='w-full h-full max-w-[40px] max-h-[40px]'
                         />
-                        <h1 className='text-[26px] font-[600]'>{title}</h1>
+                        <h1 className='text-[26px] font-semibold'>{title}</h1>
                         <Link
-                          href={link}
+                          href={'/ai-writer/tools'}
                           className='p-[10px]  rounded-full bg-[#6126DD] w-max'
                         >
                           <FaExternalLinkAlt size={15} />
@@ -66,7 +66,7 @@ const Page = () => {
             <div className='mt-10'>
               <div className='grid grid-cols-2 gap-8'>
                 <div>
-                  <h1 className='font-[600] text-[26px]  mb-3  text-[#6126DD]'>
+                  <h1 className='font-semibold text-[26px]  mb-3  text-[#6126DD]'>
                     What is an AI Writer and what does it do?
                   </h1>
                   <p className='text-[14px] font-[500] text-justify mt-2'>
@@ -87,7 +87,7 @@ const Page = () => {
                 </div>
                 <div className='flex items-center justify-center'>
                   <Image
-                    src={"/images/aiicon1.png"}
+                    src={'/images/aiicon1.png'}
                     alt=''
                     width={250}
                     height={250}
@@ -96,7 +96,7 @@ const Page = () => {
                 </div>
                 <div className='flex items-center justify-center'>
                   <Image
-                    src={"/images/editIcon2.jpg"}
+                    src={'/images/editIcon2.jpg'}
                     alt=''
                     width={250}
                     height={250}
@@ -104,7 +104,7 @@ const Page = () => {
                   />
                 </div>
                 <div className='text-justify'>
-                  <h1 className='font-[600] text-[26px]  mb-3 text-[#6126DD]'>
+                  <h1 className='font-semibold text-[26px]  mb-3 text-[#6126DD]'>
                     Benefits of using AI tools for writing
                   </h1>
                   <p className='text-[14px] font-[500] text-justify mt-2'>

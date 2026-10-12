@@ -10,7 +10,7 @@ const HeroBannner = () => {
 						Welcome to <span className="text-[#6126DD]"> TEXTCRAFT</span>
 						<br /> Your Ultimate Content Creation Hub!
 					</h1>
-					<h1 className="text-[38px] font-[600] mt-4">
+					<h1 className="text-[38px] font-semibold mt-4">
 						Easily generate and transform text and images using
 						<span className="text-[#6126DD]"> TEXTCRAFT</span> Tools, completely
 						free of charge.

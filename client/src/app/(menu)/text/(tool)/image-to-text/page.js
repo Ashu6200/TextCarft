@@ -75,10 +75,10 @@ const Page = () => {
 		<section className="w-full h-auto">
 			<div className="px-40 py-16 flex justify-between gap-10">
 				<div className="w-[60%]">
-					<h1 className=" text-[20px] font-[600] text-[#6126DD]">
+					<h1 className=" text-[20px] font-semibold text-[#6126DD]">
 						Text Extactor from image
 					</h1>
-					<p className=" text-[14px] font-[600]">
+					<p className=" text-[14px] font-semibold">
 						A proposed methodology is designed to accurately extract text from
 						images and convert it into a textual format.
 					</p>
@@ -130,11 +130,11 @@ const Page = () => {
 					</form>
 				</div>
 				<div className="w-[40%]">
-					<h1 className="text-[#6126DD] text-[20px] font-[600]">
+					<h1 className="text-[#6126DD] text-[20px] font-semibold">
 						Extracted Text from Image
 					</h1>
 					<div className="flex flex-col gap-3 mt-8">
-						<div className=" text-[14px] font-[600] my-2">
+						<div className=" text-[14px] font-semibold my-2">
 							<LoadingBar
 								color="#6126DD"
 								progress={progress}

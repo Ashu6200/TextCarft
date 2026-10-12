@@ -12,7 +12,7 @@ const SuggestionForm = () => {
 	return (
 		<form className="w-full max-[480px]:w-full">
 			<div className="grid mb-3">
-				<label htmlFor="name" className="font-[600] text-[14px]">
+				<label htmlFor="name" className="font-semibold text-[14px]">
 					Name
 				</label>
 				<input
@@ -25,7 +25,7 @@ const SuggestionForm = () => {
 				/>
 			</div>
 			<div className="grid mb-3">
-				<label htmlFor="Suggestion" className="font-[600] text-[14px]">
+				<label htmlFor="Suggestion" className="font-semibold text-[14px]">
 					Suggestion
 				</label>
 				<textarea

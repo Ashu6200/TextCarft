@@ -68,10 +68,10 @@ const Page = () => {
 		<section className="w-full h-auto">
 			<div className="px-40 py-16 flex justify-between gap-10 relative">
 				<div className="w-[60%]">
-					<h1 className=" text-[20px] font-[600] text-[#6126DD]">
+					<h1 className=" text-[20px] font-semibold text-[#6126DD]">
 						Speech to Text
 					</h1>
-					<p className=" text-[14px] font-[600]">
+					<p className=" text-[14px] font-semibold">
 						A speech recognition methodology designed to accurately transcribe
 						spoken language into textual format is proposed.
 					</p>
@@ -86,15 +86,15 @@ const Page = () => {
 					</form>
 				</div>
 				<aside className="w-[40%] sticky top-16">
-					<h1 className="text-[#6126DD] text-[20px] font-[600]">Controllers</h1>
-					<p className="text-[14px] font-[600]">
+					<h1 className="text-[#6126DD] text-[20px] font-semibold">Controllers</h1>
+					<p className="text-[14px] font-semibold">
 						Microphone:{" "}
 						{isListening ? "Listening........." : "Click to start Listening"}
 					</p>
 					<div className="flex flex-col items-center gap-3 mt-8">
 						<button
 							type="button"
-							className=" w-full bg-[green]  text-white font-[600] py-2 px-4 rounded-full min-w-20"
+							className=" w-full bg-[green]  text-white font-semibold py-2 px-4 rounded-full min-w-20"
 							onClick={handleListing}
 						>
 							Start
@@ -103,7 +103,7 @@ const Page = () => {
 							<button
 								type="button"
 								onClick={stopHandle}
-								className=" w-full bg-[red]  text-white font-[600] py-2 px-4 rounded-full min-w-20"
+								className=" w-full bg-[red]  text-white font-semibold py-2 px-4 rounded-full min-w-20"
 							>
 								Stop
 							</button>
@@ -111,7 +111,7 @@ const Page = () => {
 						<button
 							type="button"
 							onClick={handleReset}
-							className=" w-full bg-[#6126DD]  text-white font-[600] py-2 px-4 rounded-full min-w-20"
+							className=" w-full bg-[#6126DD]  text-white font-semibold py-2 px-4 rounded-full min-w-20"
 						>
 							Reset
 						</button>

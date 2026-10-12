@@ -24,7 +24,7 @@ const Whychoose = () => {
 						/>
 					</div>
 					<div className="col-span-2">
-						<h1 className="font-[600] text-[26px]  mb-3 text-[#6126DD]">
+						<h1 className="font-semibold text-[26px]  mb-3 text-[#6126DD]">
 							3 reasons why TEXTCRAFT TOOL
 						</h1>
 						<ol className="list-decimal list-outside mb-3 ml-4">
@@ -51,7 +51,7 @@ const Whychoose = () => {
 						</p>
 					</div>
 					<div className="col-span-3">
-						<h1 className="font-[600] text-[26px] mb-3 text-[#6126DD]">You can trust us </h1>
+						<h1 className="font-semibold text-[26px] mb-3 text-[#6126DD]">You can trust us </h1>
 
 						<p className="text-[14px] font-[500] text-justify mt-2">
 							Regarding trust, we do our best to provide you with the best
@@ -70,7 +70,7 @@ const Whychoose = () => {
 						/>
 					</div>
 					<div className="col-span-2">
-						<h1 className="font-[600] text-[26px]  mb-3 text-[#6126DD]">
+						<h1 className="font-semibold text-[26px]  mb-3 text-[#6126DD]">
 							World-class tools with a stellar team
 						</h1>
 						<p className="text-[14px] font-[500] text-justify mt-2">

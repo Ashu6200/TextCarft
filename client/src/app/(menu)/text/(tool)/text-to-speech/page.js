@@ -60,10 +60,10 @@ const Page = () => {
 		<section className="w-full h-auto">
 			<div className="px-40 py-16 flex justify-between gap-10">
 				<div className="w-[60%]">
-					<h1 className=" text-[20px] font-[600] text-[#6126DD]">
+					<h1 className=" text-[20px] font-semibold text-[#6126DD]">
 						Text to Speech
 					</h1>
-					<p className=" text-[14px] font-[600]">
+					<p className=" text-[14px] font-semibold">
 						A text-to-speech (TTS) methodology is devised with the objective of
 						accurately vocalizing textual content.
 					</p>
@@ -77,11 +77,11 @@ const Page = () => {
 					</form>
 				</div>
 				<div className="w-[40%]">
-					<h1 className="text-[#6126DD] text-[20px] font-[600]">Controllers</h1>
+					<h1 className="text-[#6126DD] text-[20px] font-semibold">Controllers</h1>
 					<div className="flex flex-col items-center gap-3 mt-8">
 						<button
 							type="button"
-							className=" w-full bg-[green]  text-black font-[600] py-2 px-4 rounded-full min-w-20"
+							className=" w-full bg-[green]  text-black font-semibold py-2 px-4 rounded-full min-w-20"
 							onClick={handlePlay}
 						>
 							{isPaused ? "Resume" : "Play"}
@@ -89,7 +89,7 @@ const Page = () => {
 						<button
 							type="button"
 							onClick={handlePause}
-							className=" w-full bg-[yellow]  text-black font-[600] py-2 px-4 rounded-full min-w-20"
+							className=" w-full bg-[yellow]  text-black font-semibold py-2 px-4 rounded-full min-w-20"
 						>
 							Pause
 						</button>
@@ -97,7 +97,7 @@ const Page = () => {
 						<button
 							type="button"
 							onClick={handleStop}
-							className=" w-full bg-[red]  text-black font-[600] py-2 px-4 rounded-full min-w-20"
+							className=" w-full bg-[red]  text-black font-semibold py-2 px-4 rounded-full min-w-20"
 						>
 							Stop
 						</button>
